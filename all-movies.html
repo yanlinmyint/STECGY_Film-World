@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="library/fontawesome/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shotcut icon" href="images/logofilm.png">
+
+	<title>Movies</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+
+	<!-- header section start -->
+		<section id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			  	<a class="navbar-brand" href="home.html">
+			  		<img src="images/logo2.png" alt="" class="img-fluid ml-3" style="width: 110px;height: 35px;">
+			  	</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      	<li class="nav-item active">
+			        	<a class="nav-link text-white-50" href="home.html">Home <span class="sr-only">(current)</span></a>
+			      	</li>
+			      	
+				    <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle text-white-50" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Categories
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#actions">Action</a>
+				          <a class="dropdown-item" href="#horrors">Horror</a>
+				          <a class="dropdown-item" href="#drama">Drama</a>
+				          <a class="dropdown-item" href="#documentary">Documentary</a>
+				          <div class="custom-control custom-switch">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="myFunction()">
+						  <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+						</div>
+				          <div class="dropdown-divider"></div>
+				        <a class="dropdown-item" href="#">Something else here</a>
+				        </div>
+				    </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control my-1" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-light my-1" type="submit"><i class="fas fa-search mr-2"></i></button>
+			      <a onclick="toggle_visibility('setting');"><i class="fas fa-user-circle text-white ml-3"></i></a>
+			      <i class="fas fa-bell ml-3 text-white"></i>
+			    </form>
+			  </div>
+			</nav>
+		</section>
+	<!-- header section end -->
+
+	<div class="container mb-5">
+		<div>Navbar section </div>
+	</div>
+	
+	<!-- New movies section start -->
+		<section id="all-movies">
+			<div class="container">
+				<div class="title"><h5 class="ml-2">All Movies</h5></div>
+				<div class="row text-white mt-4">
+					<div class="ml-3 mb-4">
+						<a href="#">
+							<img src="images/actions/die1.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/spiderman.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/drama/Boyhood.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-4">
+						<a href="#">
+							<img src="images/actions/face off.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/drama/1917.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/actions/fast and furious.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-4">
+						<a href="#">
+							<img src="images/drama/Creed.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/actions/gladiator.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-4">
+							<a href="#">
+								<img src="images/drama/Dunkirk.jpg" alt="" class="img-fluid">
+							</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/actions/Goldfinger.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/drama/Forest Gump.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-4">
+						<a href="#">
+							<img src="images/actions/IP Man.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/drama/Ludo.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/actions/john wick.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-4">
+						<a href="#">
+							<img src="images/drama/Moneyball.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-4">
+						<a href="#">
+							<img src="images/actions/rambo.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/drama/Moonlight.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/actions/spartan.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/howl.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/actions/The raid.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+							<a href="#">
+								<img src="images/drama/Parasite.jpg" alt="" class="img-fluid">
+							</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/13th.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/drama/Roma.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/A Secret Love.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/drama/Selma.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/American Factory poster.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/drama/Spotlight.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/documentary/Athlete A.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/drama/Taxi Driver.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Crip Camp.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/drama/The Irishman.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Dick Johnson is dead.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+							<a href="#">
+								<img src="images/horrors/a_quiet_place.jpg" alt="" class="img-fluid">
+							</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Free solo.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/Childs_Play.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/documentary/FYRE.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+							<a href="#">
+								<img src="images/horrors/get_out.jpg" alt="" class="img-fluid">
+							</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Icarus.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/horrors/Insidious.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Knock Down the House.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/horrors/Jaws.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Miss Americana.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/Pee_Mak.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/documentary/My octopus teacher.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/Ready_or_Not.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/Strong Island.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/horrors/Saws.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/The Great Hack.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/horrors/the_babadook.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/documentary/The Social Dilemma.jpeg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/the_cabin_in_the_woods.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/scientics/arrival.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/the_conjiuring.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/avatar1.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/horrors/the_descent.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/back to the future1.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/horrors/the_texas_Chain_Saw_Massacre.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/Batman1.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/the_witch.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/scientics/blade runner.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/horrors/train_to_busan.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/District 91.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/scientics/E-T.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/inception.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/scientics/interstellar1.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/marval.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/Rise of the planet.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/scientics/RObocop1.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/snowpiercer.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/Star wars.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-3 mb-5">
+						<a href="#">
+							<img src="images/scientics/the matrix.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div class="ml-2 mb-5">
+						<a href="#">
+							<img src="images/scientics/the terminator.jpg" alt="" class="img-fluid">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- New movies section end -->
+
+	<!-- footer section start -->
+		<footer class="bg-dark">
+			<div class="container text-white-50 py-3 font-size-13 ">
+				<div class="row">
+					<div class="col-md-3 mt-3">
+						
+						<div class="mb-1">FAQ</div>
+						<div class="mb-1">Rrivacy Policy</div>
+						<div class="mb-1">Terms of Use</div>
+						<div class="mb-1">Help Center</div>
+						
+					</div>
+					<div class="col-md-3 mt-3">
+						
+						<div class="mb-1">About us</div>
+						<div class="mb-1">Contact us</div>
+						<div class="mb-1">Careers</div>
+						<div class="mb-1">Support</div>
+					</div>
+					<div class="col-md-3 mt-3">
+						
+						<div class="mb-1">Developer</div>
+						<div class="mb-1">Ways to Watch</div>
+						<div class="mb-1">Advertise with us</div>
+						<div class="mb-1">Other</div>
+					</div>
+					<div class="col-md-3 text-left">
+						
+						<h1 class="font-size-16 mt-3 mb-3 ml-2">Download App</h1>
+						<img src="images/footer-img.png" alt="" class="img-fluid" style="width: 100px;height: 70px">
+					</div>
+				</div>
+				<div class="row mt-3">
+						<h1 class="font-size-16 ml-3">Follow on:</h1>
+							<i class="fab fa-facebook-f ml-3 fa-2x"></i>
+							<i class="fab fa-instagram ml-4 fa-2x"></i>
+							<i class="fab fa-twitter ml-4 fa-2x"></i>
+						</div>
+				<div class="copyright mt-3 text-center">
+					copyright &copy; 2020 | STECGY Film World
+				</div>
+			</div>
+		</footer>
+	<!-- footer section end -->
+
+		<script type="text/javascript">
+			function myFunction() {
+		   		var element = document.body;
+		   		element.classList.toggle("dark-mode");
+			};
+			function toggle_visibility(id) {
+		       var e = document.getElementById(id);
+		       if(e.style.display == 'block')
+		          e.style.display = 'none';
+		       else
+		          e.style.display = 'block';
+		    }
+		</script>
+
+	
+	<script src="library/bootstrap/jquery-3.5.1.slim.min.js"></script>
+	<script src="library/bootstrap/popper.min.js"></script>
+	<script src="library/bootstrap/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+	
+
+
+</body>
+</html>
+
+<!-- bootstrap.css
+jquery.js
+popper.js
+bootstrap.js -->

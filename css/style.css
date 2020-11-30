@@ -1,0 +1,193 @@
+/*global section*/
+.font-size-13{
+	font-size: 13px;
+}
+.font-size-8{
+	font-size: 8px;
+}
+.font-size-14{
+	font-size: 14px;
+}
+.font-size-15{
+	font-size: 15px;
+}
+.font-size-16{
+	font-size: 16px;
+}
+.font-ra{
+	font-family: 'Rambla', sans-serif;
+}
+
+
+.text-orange{
+	color: #ffbc00;
+}
+#new-movies .nav-link,
+#actions .nav-link,
+#scientics .nav-link,
+#horrors .nav-link,
+#drama .nav-link,
+#documentary .nav-link{
+	color: black;
+}
+.dark-mode {
+  background-color: #2C3539;
+  color: white;
+}
+body{
+  background-color: #E5E4E2;
+  color: black;
+}
+
+/*login section*/
+#login-navbar .btn{
+	width: 100px;
+	height: 35px;
+	line-height: 15px;
+}
+#login-form{
+	margin-left: 38%;
+	margin-top: 50px;
+	width: 300px;
+	height: 400px;
+	color: white;
+}
+.dropdown-item:hover{
+	background: #1e90ff;
+}
+
+
+/*header section*/
+#header .navbar{
+	background: ;
+}
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: left .5s ease;
+	z-index: 3;
+	
+}
+#header .btn{
+	border-radius: 0px 20px 20px 0px;
+	border: 1px solid white;
+}
+#header .form-inline input{
+	border-radius: 20px 0px 0px 20px;
+	border: 1px solid white;
+	width: 280px;
+}
+
+/*slide section*/
+
+#carouselExampleIndicators img{
+	height: 400px;
+}
+.carousel-indicators{
+	z-index: 1;
+}
+
+/*new movies section*/
+
+
+/*actions section*/
+
+
+
+#die button{
+	border-radius: 20px 20px 20px 20px;
+}
+#die img{
+	width: 150px;
+	height: 240px;
+}
+#die .other-similar-movies img{
+	width: 115px;
+	height: 180px;
+}
+
+/*test section*/
+#documentary img:hover,
+#scientics img:hover,
+#actions img:hover,
+#horrors img:hover,
+#new-movies img:hover,
+#drama img:hover,
+#all-movies img:hover{
+	transform: scale(1.1);
+	transition: transform 1s ease;
+}
+#documentary img,
+#scientics img,
+#actions img,
+#horrors img,
+#new-movies img,
+#drama img{
+
+	width: 115px;
+	height: 180px;
+}
+
+
+/*all-movies section*/
+#all-movies img{
+	width: 130px;
+	height: 190px;
+}
+
+#all-movies .title{
+	height: 30px;
+	text-align: left;
+	background-color: gray;
+}
+
+/*payment section*/
+#payment .month {
+	border: 1px solid gray;
+	background: gray;
+	color: #fff;
+}
+#payment .month:hover{
+	border: 1px solid blue;
+	background: #B6B6B4;
+	color: blue;
+}
+#payment .month{
+	width: 350px;
+	height: 58px;
+	border-radius: 10px;
+}
+#payment input{
+	height: 40px;
+	width: 200px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-left: 80px;
+}
+#payment .btn{
+	margin-left: 135px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+	#carouselExampleIndicators img{
+		height: 160px;
+	}
+	#login-form{
+		margin-left: 16%;
+	}
+	#payment .month{
+		width: 390px;
+	}
+	#payment button{
+		margin-left: 38%;
+	}
+	#payment input{
+		margin-left: 100px;
+	}
+}
