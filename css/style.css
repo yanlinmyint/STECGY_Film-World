@@ -14,9 +14,35 @@
 .font-size-16{
 	font-size: 16px;
 }
+.font-size-20{
+	font-size: 20px;
+}
+.font-size-40{
+	font-size: 40px;
+}
+.text-orange{
+	color: #e35300;
+}
+.text-black{
+	color: black;
+}
 .font-ra{
 	font-family: 'Rambla', sans-serif;
 }
+.font-ho{
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+/*alert section*/
+.alert{
+	position: absolute;
+	
+	z-index: 1;
+}
+#about-us .btn{
+	border-radius: 20px 20px 20px 20px;
+}
+
 
 
 .text-orange{
@@ -29,10 +55,6 @@
 #drama .nav-link,
 #documentary .nav-link{
 	color: black;
-}
-.dark-mode {
-  background-color: #2C3539;
-  color: white;
 }
 body{
   background-color: #E5E4E2;
@@ -58,9 +80,6 @@ body{
 
 
 /*header section*/
-#header .navbar{
-	background: ;
-}
 #header{
 	position: fixed;
 	top: 0;
@@ -88,13 +107,6 @@ body{
 .carousel-indicators{
 	z-index: 1;
 }
-
-/*new movies section*/
-
-
-/*actions section*/
-
-
 
 #die button{
 	border-radius: 20px 20px 20px 20px;
@@ -143,32 +155,97 @@ body{
 	background-color: gray;
 }
 
-/*payment section*/
-#payment .month {
-	border: 1px solid gray;
-	background: gray;
-	color: #fff;
+#profile button{
+	width: 100px;
+	height: 50px;
 }
-#payment .month:hover{
+#profile h5{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+#profile .sel{
+	display: block;
+	margin-bottom: 30px;
+}
+#profile .sel .btn:hover{
+	border-color: #6699FF;
+}
+#profile .sel .btn:active, 
+#profile .sel .btn:focus {
+    border: 1px solid #6699FF;
+    color: #6699FF;
+}
+#profile .sub button:hover{
 	border: 1px solid blue;
-	background: #B6B6B4;
+	background: #CCFFFF;
+	color: black;
+}
+#profile .sub{
+	border-left: 1px solid black;
+}
+
+
+
+
+
+/*about us section*/
+#about-us img{
+	width: 100%;
+}
+#about-us .card{
+	box-shadow: 10px solid gray;
+}
+#about-us .col-4 img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-size: 100%;
+}
+#about-us .col-4:hover{
 	color: blue;
 }
-#payment .month{
-	width: 350px;
-	height: 58px;
-	border-radius: 10px;
+#about-us .col-4 {
+  position: relative;
+  border-radius: 50%;
 }
-#payment input{
-	height: 40px;
-	width: 200px;
-	border: 1px solid gray;
-	border-radius: 10px;
-	margin-left: 80px;
+
+.img__description {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  width: 120px;
+  height: 30px;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
 }
-#payment .btn{
-	margin-left: 135px;
+
+#about-us .col-4:hover .img__description {
+  visibility: visible;
+  opacity: 1;
 }
+#header .alert {
+	margin-top: 10px;
+	margin-left: 27%;
+}
+#header .alert .alert-btn{
+	background: black;
+	width: 60px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -179,15 +256,30 @@ body{
 		height: 160px;
 	}
 	#login-form{
-		margin-left: 16%;
+		margin-left: 90px;
 	}
 	#payment .month{
 		width: 390px;
 	}
-	#payment button{
-		margin-left: 38%;
+	#payment .btn{
+		margin-left: 40%;
 	}
 	#payment input{
 		margin-left: 100px;
+	}
+	#payment .mid{
+		 height: 963px;
+	}
+
+	#documentary img,
+	#scientics img,
+	#actions img,
+	#horrors img,
+	#new-movies img,
+	#drama img,
+	#all-movies img{
+		width: 130px;
+		height: 200px;
+		margin-left: 1px;
 	}
 }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="library/fontawesome/fontawesome-all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shotcut icon" href="images/logofilm.png">
+
+	<title>STECGY Film World</title>
+	<style type="text/css">
+		#profile{
+			background: #E4E5E2;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<!-- header section start -->
+		<section id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			  	<a class="navbar-brand" href="home.html">
+			  		<img src="images/logo2.png" alt="" class="img-fluid ml-3" style="width: 110px;height: 35px;">
+			  	</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      	<li class="nav-item active">
+			        	<a class="nav-link font-ho text-white-50" href="home.html">Home<span class="sr-only">(current)</span></a>
+			      	</li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control font-ho my-1" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-light my-1" type="submit"><i class="fas fa-search mr-2"></i></button>
+			      <a href="index.html"><i class="fas fa-user-circle text-white ml-3"></i></a>
+			      <i class="fas fa-download text-white ml-3"></i>
+			    </form>
+			  </div>
+			</nav>
+		</section>
+	<!-- header section end -->
+
+	<div class="container mb-5">
+		<div>Navbar section </div>
+	</div>	
+
+	<!-- profile section start -->
+		<section id="profile">
+			<div class="container">
+				<div class="row">
+					<div class="col" style="border-right: 1px solid gray;">
+						<div class="pay-bg" style="background: url(images/bg3.jpg);background-size: cover;
+						background-repeat: no-repeat;
+						background-attachment: fixed;
+						margin-right: 10px;height: 160px;">
+				    		<span style="margin-left: 38%" class="text-center text-white"><i class="fas fa-user-circle fa-5x mt-3 text-white"></i>
+				    		<h5 class="text-center font-ho mb-2">User_Name</h5></span>
+			    		</div>
+			    		
+			    			<div class="row">
+			    				<a class="mt-3" href="home.html">
+			  					<img src="images/logo2.png" alt="" class="img-fluid ml-3" style="display: inline;width: 110px;height: 35px;">
+			  					</a>
+			  					<h6 class="mt-4 ml-2 mb-4">Film World</h6>
+			  				</div>
+			    		<h4>About </h4>
+			    		<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Quas consequatur atque voluptatum dolores quod odio quaerat, quia mollitia maxime placeat sint reprehenderit similique alias cumque facilis, deleniti exercitationem asperiores eveniet.</p>
+			    	</div>
+			    		<div class="dropdown-divider"></div>
+					<div class="col-4 text-center font-ho">
+						<h5>Choose your subscription:</h5>
+						<select id="cars" style="width: 250px;height: 40px;border-radius: 10px;">
+						  <option value="volvo">7 days&emsp;&emsp; = 2500 MMK </p></option>
+						  <option value="saab">15 days&emsp;&ensp; = 5000 MMK </p></option>
+						  <option value="opel">1 month&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 10000 MMK</p></option>
+						  <option value="audi"> 2 months&ensp; = 18000 MMK</p></option>
+						</select>	
+						<h5>Choose your payment method:</h5>
+						<div class="sel">	
+							<button class="btn btn-light mr-5">
+								<img src="images/mpt.png" alt="" class="img-fluid" style="width: 55px">
+							</button>
+							<button class="btn btn-light"><img src="images/telenor.png" alt="" class="img-fluid"></button>
+						</div>
+						<div class="sel">	
+							<button class="btn btn-light mr-5">
+								<img src="images/ooredoo.png" alt=""class="img-fluid">
+							</button>
+							<button class="btn btn-light">
+								<img src="images/mytel.png" alt="" class="img-fluid">
+							</button>
+						</div>
+						<div class="sel">	
+							<button class="btn btn-light mr-5" onclick="myFunction()">
+								<img src="images/kbz.png" alt="" class="img-fluid" style="width: 38px;"></button>
+							<button class="btn btn-light" onclick="myFunction1()">
+								<img src="images/aya.png" alt="" class="img-fluid">
+							</button>
+						</div>
+						<div class="dropdown-divider"></div>
+					</div>
+					<div class="col sub text-center">
+						<h5 class="mb-5">Enter your phone number:</h5>
+						<input type="text" id="textToDisplay" name="phone" placeholder="  09-XXX XXX XXX" style="width: 140px;height: 40px;border-radius: 10px;">
+						<a href="profile-code.html" ><button class="btn btn-info mt-5 ml-5 mb-5 font-ho" style="width: 250px;height: 40px;display: block;" onclick="showMessage()">Submit</button></a>
+
+						<p class="text-dark font-size-13">Need Help? Click here<br><a href="" class="text-info">Help Center?</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- profile section end-->
+
+
+	<!-- footer section start -->
+		<footer class="bg-dark">
+			<div class="container text-white-50 py-3 font-size-13 ">
+				<div class="row">
+					<div class="col-md-3 mt-3">
+						
+						<div class="font-ho mb-1"><a href="FAQ.html" class="text-white-50">FAQ</a></div>
+						<div class="font-ho mb-1">Rrivacy Policy</div>
+						<div class="font-ho mb-1">Terms of Use</div>
+						<div class="font-ho mb-1">Help Center</div>
+						
+					</div>
+					<div class="col-md-3 mt-3">
+						
+						<div class="font-ho mb-1"><a href="about-us.html" class="text-white-50">About us</a></div>
+						<div class="font-ho mb-1"><a href="contact-us.html" class="text-white-50">Contact us</a></div>
+						<div class="font-ho mb-1">Careers</div>
+						<div class="font-ho mb-1">Support</div>
+					</div>
+					<div class="col-md-3 mt-3">
+						
+						<div class="font-ho mb-1">Developer</div>
+						<div class="font-ho mb-1">Ways to Watch</div>
+						<div class="font-ho mb-1">Advertise with us</div>
+						<div class="font-ho mb-1">Other</div>
+					</div>
+					<div class="col-md-3 text-left">
+						
+						<h1 class="font-ho font-size-16 mt-3 mb-3 ml-2">Download App</h1>
+						<img src="images/footer-img.png" alt="" class="img-fluid" style="width: 100px;height: 70px">
+					</div>
+				</div>
+				<div class="row mt-3">
+						<h1 class="font-ho font-size-16 ml-3">Follow on:</h1>
+							<i class="fab fa-facebook-f ml-3 fa-2x"></i>
+							<i class="fab fa-instagram ml-4 fa-2x"></i>
+							<i class="fab fa-twitter ml-4 fa-2x"></i>
+						</div>
+				<div class="font-ho copyright mt-3 text-center">
+					copyright &copy; 2020 | STECGY Film World
+				</div>
+			</div>
+		</footer>
+	<!-- footer section end -->
+
+	</script>
+    <script type="text/javascript"> 
+        function myFunction() {  
+            var link = document.querySelector("#profile a"); 
+            link.getAttribute("href"); 
+            link.setAttribute("href", 
+                "https://www.kbzpay.com/en/"); 
+        } 
+    </script> 
+    <script type="text/javascript"> 
+        function myFunction1() {  
+            var link = document.querySelector("#profile a"); 
+            link.getAttribute("href"); 
+            link.setAttribute("href", 
+                "https://www.ayapay.com"); 
+        } 
+    </script> 
+	<script>
+		function showMessage() {
+			var message = jQuery("#textToDisplay").val();
+			jQuery("#messageSpan").text(message);
+		}
+	</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="library/bootstrap/jquery-3.5.1.slim.min.js"></script>
+	<script src="library/bootstrap/popper.min.js"></script>
+	<script src="library/bootstrap/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+
+	
+
+
+</body>
+</html>
+
+<!-- bootstrap.css
+jquery.js
+popper.js
+bootstrap.js -->
